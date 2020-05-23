@@ -37,7 +37,6 @@ class Owner
 
   def dogs
     Dog.all.select do |dog|
-      binding.pry
       if dog.owner == self
         dog
       end
