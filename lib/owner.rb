@@ -35,4 +35,11 @@ class Owner
     end
   end
 
+  def dogs
+    Dog.all.select do |dog|
+      if dog.owner.name == self.name
+        dog
+      end
+    end
+  end
 end
