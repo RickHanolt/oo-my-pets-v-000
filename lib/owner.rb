@@ -42,4 +42,8 @@ class Owner
       end
     end
   end
+
+  def buy_cat
+    
+  end
 end
