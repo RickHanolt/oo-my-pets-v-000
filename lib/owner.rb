@@ -10,7 +10,7 @@ class Owner
 
   def say_species
     binding.pry
-    puts "I am a #{self.species}."
+    "I am a #{self.species}."
   end
 
 end
