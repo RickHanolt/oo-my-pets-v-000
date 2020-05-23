@@ -15,4 +15,12 @@ class Owner
     "I am a #{self.species}."
   end
 
+  def self.all
+    @@all
+  end
+
+  def self.count
+    @@all.count
+  end
+
 end
