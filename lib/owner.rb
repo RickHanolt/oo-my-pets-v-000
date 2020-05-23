@@ -29,7 +29,7 @@ class Owner
 
   def cats
     binding.pry
-    Cat.all.collect {|cat| cat.owner == self.name}
+    Cat.all.select {|cat| cat.owner == self.name}
   end
 
 end
