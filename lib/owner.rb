@@ -38,7 +38,7 @@ class Owner
   def dogs
     Dog.all.select do |dog|
       binding.pry
-      if dog.owner.name == self.name
+      if dog.owner == self
         dog
       end
     end
