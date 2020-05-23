@@ -6,6 +6,7 @@ class Cat
     @name = name
     @owner = owner
     @mood = mood
+    @all_cats << self
   end
 
 end
