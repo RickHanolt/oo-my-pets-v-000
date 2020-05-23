@@ -46,5 +46,6 @@ class Owner
   def buy_cat(for_sale_cat)
     Cat.all.detect{|a_cat| a_cat.name == for_sale_cat}.owner = self
     self.cats
+    binding.pry
   end
 end
