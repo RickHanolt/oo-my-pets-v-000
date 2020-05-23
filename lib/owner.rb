@@ -29,7 +29,7 @@ class Owner
 
   def cats
     Cat.all.select do |cat|
-      if cat.owner.name == self.name
+      if cat.owner == self
         cat
       end
     end
