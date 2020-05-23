@@ -28,7 +28,6 @@ class Owner
   end
 
   def cats
-    binding.pry
     Cat.all.collect do |cat|
       if cat.owner == self.name
         cat
