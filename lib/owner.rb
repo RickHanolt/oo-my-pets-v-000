@@ -58,5 +58,5 @@ class Owner
   def feed_cats
     self.cats.each {|a_cat| a_cat.mood = "happy"}
   end
-  
+
 end
